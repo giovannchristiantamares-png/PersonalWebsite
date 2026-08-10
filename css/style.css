@@ -1,0 +1,255 @@
+/* ===== WARM CREAM + BROWN THEME (matches reference mockup) ===== */
+
+:root {
+  --cream-bg:     #f7ecd9;
+  --panel-bg:     #fbf3e6;
+  --brown-darkest:#4e3423;
+  --brown-mid:    #8a5a34;
+  --brown-accent: #c9a876;
+  --pill-bg:      #e8cfa0;
+  --text-dark:    #3a2418;
+  --text-muted:   #6b5443;
+}
+
+body {
+  background-color: var(--cream-bg);
+  color: var(--text-dark);
+  font-family: "Segoe UI", "Trebuchet MS", Arial, sans-serif;
+}
+
+/* ---------- NAVBAR ---------- */
+.navbar-brown {
+  background-color: var(--brown-darkest) !important;
+  padding-top: 14px;
+  padding-bottom: 14px;
+}
+
+.navbar-brown .navbar-brand {
+  color: var(--brown-accent) !important;
+  font-weight: 700;
+  font-size: 1.3rem;
+}
+
+.navbar-brown .nav-link {
+  color: #f3e4cd !important;
+  font-weight: 500;
+  padding: 8px 16px !important;
+  border-radius: 8px;
+  margin-left: 4px;
+}
+
+.navbar-brown .nav-link.active {
+  background-color: var(--pill-bg);
+  color: var(--text-dark) !important;
+  font-weight: 700;
+}
+
+/* ---------- FOOTER ---------- */
+.footer-brown {
+  background-color: var(--brown-darkest);
+  color: #e9d9c1;
+  text-align: center;
+  padding: 16px 0;
+  font-size: 0.9rem;
+}
+
+/* ---------- GENERIC PANEL CARD ---------- */
+.panel {
+  background-color: var(--panel-bg);
+  border-radius: 20px;
+  padding: 40px;
+}
+
+.section-heading {
+  font-weight: 800;
+  color: var(--text-dark);
+  margin-bottom: 6px;
+}
+
+.section-underline {
+  width: 50px;
+  height: 5px;
+  background-color: var(--brown-mid);
+  border-radius: 3px;
+  margin-bottom: 30px;
+}
+
+/* ---------- HERO (home) ---------- */
+.hero-photo {
+  border: 6px solid var(--brown-accent);
+  border-radius: 14px;
+  overflow: hidden;
+  width: 220px;
+  height: 260px;
+}
+
+.hero-photo img { width: 100%; height: 100%; object-fit: cover; }
+
+.hero-side-photo {
+  border-radius: 16px;
+  overflow: hidden;
+  height: 320px;
+}
+
+.hero-side-photo img { width: 100%; height: 100%; object-fit: cover; }
+
+.hero-title {
+  font-weight: 800;
+  font-size: 2.6rem;
+  color: var(--text-dark);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.hero-line {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 500;
+  color: var(--text-dark);
+  margin-bottom: 10px;
+}
+
+.hero-line i { color: var(--brown-mid); font-size: 1.1rem; }
+
+.btn-brown {
+  background-color: var(--brown-mid);
+  border: none;
+  color: #fff;
+  font-weight: 600;
+  padding: 10px 22px;
+  border-radius: 10px;
+}
+
+.btn-brown:hover { background-color: var(--brown-darkest); color: #fff; }
+
+.btn-brown-outline {
+  background-color: var(--panel-bg);
+  border: 1px solid var(--brown-accent);
+  color: var(--text-dark);
+  font-weight: 600;
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+
+.btn-brown-outline:hover { background-color: var(--pill-bg); }
+
+/* ---------- ICON CIRCLES (What I Do / Projects) ---------- */
+.icon-circle {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: var(--pill-bg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.6rem;
+  color: var(--brown-darkest);
+  margin: 0 auto 14px auto;
+}
+
+.icon-square {
+  width: 100%;
+  height: 130px;
+  border-radius: 14px;
+  background-color: var(--pill-bg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.4rem;
+  color: var(--brown-darkest);
+  margin-bottom: 18px;
+}
+
+/* ---------- CARDS (Projects) ---------- */
+.brown-card {
+  background-color: var(--panel-bg);
+  border-radius: 16px;
+  padding: 24px;
+  height: 100%;
+}
+
+.btn-remove-project {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: none;
+  background-color: var(--pill-bg);
+  color: var(--brown-darkest);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.85rem;
+}
+
+.btn-remove-project:hover {
+  background-color: var(--brown-mid);
+  color: #fff;
+}
+
+/* ---------- SKILLS ---------- */
+.skill-row {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 16px 0;
+  border-bottom: 1px solid #e8dcc7;
+}
+
+.skill-row:last-child { border-bottom: none; }
+
+.skill-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 10px;
+  background-color: var(--pill-bg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--brown-darkest);
+  font-size: 1.1rem;
+  flex-shrink: 0;
+}
+
+.skill-name {
+  width: 140px;
+  font-weight: 600;
+  flex-shrink: 0;
+}
+
+.skill-bar-track {
+  flex-grow: 1;
+  height: 10px;
+  background-color: #eadfc9;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.skill-bar-fill {
+  height: 100%;
+  background-color: var(--brown-mid);
+  border-radius: 6px;
+}
+
+.skill-percent {
+  width: 50px;
+  text-align: right;
+  font-weight: 600;
+  color: var(--text-muted);
+  flex-shrink: 0;
+}
+
+/* ---------- CONTACT FORM ---------- */
+.form-control-brown {
+  background-color: #fffaf0;
+  border: 1px solid #d9c6a3;
+  border-radius: 10px;
+}
+
+.form-control-brown:focus {
+  border-color: var(--brown-mid);
+  box-shadow: 0 0 0 0.2rem rgba(138,90,52,0.2);
+}
